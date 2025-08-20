@@ -17,7 +17,7 @@ class ChooseModePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.background,
+      backgroundColor: AppColors.darkBackground,
       body: Stack(
         children: [
           Container(
@@ -87,7 +87,7 @@ class ChooseModePage extends StatelessWidget {
                           style: TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 17,
-                            color: AppColors.text,
+                            color: AppColors.grey,
                           ),
                         ),
                       ],
@@ -127,7 +127,7 @@ class ChooseModePage extends StatelessWidget {
                           style: TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 17,
-                            color: AppColors.text,
+                            color: AppColors.grey,
                           ),
                         ),
                       ],

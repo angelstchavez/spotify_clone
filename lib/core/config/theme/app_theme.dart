@@ -4,7 +4,7 @@ import 'package:spotify_clone/core/config/theme/app_colors.dart';
 class AppTheme {
   static final lightTheme = ThemeData(
     primaryColor: AppColors.primary,
-    scaffoldBackgroundColor: AppColors.background,
+    scaffoldBackgroundColor: AppColors.lightBackground,
     brightness: Brightness.light,
     fontFamily: 'Satoshi',
     elevatedButtonTheme: ElevatedButtonThemeData(
@@ -13,7 +13,7 @@ class AppTheme {
         textStyle: const TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.bold,
-          color: AppColors.text,
+          color: AppColors.darkGrey,
         ),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       ),
@@ -21,17 +21,17 @@ class AppTheme {
   );
 
   static final darkTheme = ThemeData(
-    primaryColor: AppColors.darkPrimary,
+    primaryColor: AppColors.darkBackground,
     scaffoldBackgroundColor: AppColors.darkBackground,
     brightness: Brightness.dark,
     fontFamily: 'Satoshi',
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor: AppColors.darkPrimary,
+        backgroundColor: AppColors.darkBackground,
         textStyle: const TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.bold,
-          color: AppColors.darkText,
+          color: AppColors.darkGrey,
         ),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       ),

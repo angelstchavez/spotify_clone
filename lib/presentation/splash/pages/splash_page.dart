@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:spotify_clone/core/config/assets/app_vectors.dart';
 import 'package:spotify_clone/presentation/intro/pages/get_started_page.dart';
 
@@ -24,12 +24,12 @@ class _SplashPageState extends State<SplashPage> {
 
   Future<void> redirect() async {
     await Future.delayed(const Duration(seconds: 2));
-    Navigator.pushReplacementNamed(
-      // ignore: use_build_context_synchronously
+    if (!mounted) return;
+    Navigator.pushReplacement(
       context,
       MaterialPageRoute(
         builder: (BuildContext context) => const GetStartedPage(),
-      ).settings.name!,
+      ),
     );
   }
 }
